@@ -1,0 +1,22 @@
+    .grid {
+        &-col {
+            &-2 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                align-items: center;
+                justify-content: space-between;
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+        &-reversed {
+            & :first-child {
+                order: 2;
+                @media screen and (max-width: 768px) {
+                    order: 0;
+                }
+            }
+        }
+    }

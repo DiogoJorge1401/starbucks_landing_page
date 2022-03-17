@@ -1,0 +1,35 @@
+   .btn {
+       cursor: pointer;
+       display: inline-block;
+       background: none;
+       border: 1px solid #000;
+       border-radius: 50px;
+       padding: 7px 16px;
+       line-height: 1.2;
+       text-align: center;
+       font-weight: bold;
+       &-dark {
+           background-color: #000;
+           color: #fff;
+           transition: .3s;
+           &-outline {
+               border-color: #000;
+               color: #000;
+               transition: .3s;
+               &:hover {
+                   background-color: rgba(0, 0, 0, .06);
+               }
+           }
+           &:hover {
+               background-color: #333;
+           }
+       }
+       &-light-outline {
+           border-color: #fff;
+           color: #fff;
+           transition: .3s;
+           &:hover {
+               background-color: rgba(0, 0, 0, .06);
+           }
+       }
+   }
